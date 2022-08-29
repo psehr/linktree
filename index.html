@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Loïc Abel - Linktree</title>
+    <link rel="shortcut icon" href="./images/tree.ico" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            VANTA.BIRDS({
+                el: "#vanta",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: true,
+                minHeight: visualViewport.height,
+                minWidth: visualViewport.width,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color1: 0x3878,
+                color2: 0x2c57a4,
+                birdSize: 1.10,
+                wingSpan: 24.00,
+                quantity: 3.00,
+                backgroundAlpha: 0.0
+            })
+            const main = document.querySelector('.title');
+            main.style.opacity = 1;
+
+            const body = document.querySelector('body');
+            body.style.backdropFilter = 'blur(0px)';
+        })
+    </script>
+</head>
+
+<body>
+    <div id="vanta">
+        <main>
+            <header>
+                <img src="./images/moi.jpg" alt="Loïc Abel">
+                <h1>@pseh</h1>
+            </header>
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="./images/home.svg" alt="Homepage">
+                        Website</a>
+                </li>
+                <li>
+                    <a href="https://github.com/psehr">
+                        <img src="./images/github.svg" alt="GitHub">
+                        GitHub</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/pse_hr">
+                        <img src="./images/twitter.svg" alt="Twitter">
+                        Twitter</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/loicabel/">
+                        <img src="./images/instagram.svg" alt="Instagram">
+                        Instagram</a>
+                </li>
+            </ul>
+            <div class="title">
+                <h1>Loïc Abel</h1>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
